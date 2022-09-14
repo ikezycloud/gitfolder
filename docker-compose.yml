@@ -9,7 +9,7 @@ services:
     links:
       - mongo
     volumes:
-      - myremotevolume:/usr/src/app
+      - ikezyremotevolume:/usr/src/app
   
   mongo:
     image: mongo
@@ -17,4 +17,4 @@ services:
       - "27017:27017"
 
   volumes:
-    myremotevolume:    
+    ikezyremotevolume:
